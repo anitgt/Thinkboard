@@ -1,5 +1,5 @@
 export const getAllNotes =  (req,res) => {
-   res.status(200).send('This is NotePost page')
+   res.status(200).send('This is Note Post page')
 };
 
 
