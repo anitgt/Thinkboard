@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose"
 
 const noteSchema = new mongoose.Schema(
     {
@@ -7,7 +7,7 @@ const noteSchema = new mongoose.Schema(
             required: true
         },
         content: {
-            type: true,
+            type: String,
             required: true
         },
     },

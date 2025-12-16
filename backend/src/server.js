@@ -10,7 +10,15 @@ const PORT = process.env.PORT || 3000
 
 connectDb();
 
+app.use(express.json())
+
+// app.use((req,res,next) => {
+//     console.log(`Req Method is ${req.method} Req URL is ${req.url}`);
+//      next()
+// })
+
 app.use('/notes/api', router)
+
 
 app.listen(PORT, () => {
     console.log('Listening at port', PORT)
