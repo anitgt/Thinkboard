@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000
 
-connectDb();
+
 
 app.use(express.json())
 app.use(rateLimiter);
@@ -21,7 +21,8 @@ app.use(rateLimiter);
 
 app.use('/notes/api', router)
 
-
-app.listen(PORT, () => {
+connectDb().then(() => {
+   app.listen(PORT, () => {
     console.log('Listening at port', PORT)
-}) 
+    }) 
+})
