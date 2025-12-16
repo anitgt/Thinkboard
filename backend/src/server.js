@@ -14,10 +14,7 @@ const PORT = process.env.PORT || 3000
 app.use(express.json())
 app.use(rateLimiter);
 
-// app.use((req,res,next) => {
-//     console.log(`Req Method is ${req.method} Req URL is ${req.url}`);
-//      next()
-// })
+
 
 app.use('/notes/api', router)
 

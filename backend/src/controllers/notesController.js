@@ -53,7 +53,7 @@ export const fetchNote = async (req,res) => {
 
 export const deleteNote = async (req,res) => {
       try {
-        const { title, content } = req.body;
+        const { title, content} = req.body;
       const deletedNote = await Note.findByIdAndDelete(req.params.id, {title, content}, { new: true });
       if(!deletedNote) {
         return res.status(404).json({message : "Note not found"});
