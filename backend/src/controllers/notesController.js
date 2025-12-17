@@ -3,10 +3,10 @@ import Note from  '../../models/Note.js'
 export const getAllNotes = async (req,res) => {
    try {
     const notes = await Note.find().sort({createdAt: -1})
-    res.status(200).json(notes)
+    return res.status(200).json(notes)
    } catch (e) {
     console.error('Something is wrong in finding Notes', e);
-    res.status(500).json({message: 'Internal server error'})
+    return res.status(500).json({message: 'Internal server error'})
    }
 };
 

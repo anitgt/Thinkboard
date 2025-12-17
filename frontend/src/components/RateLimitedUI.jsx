@@ -6,21 +6,17 @@ const RateLimitedUI = () => {
       <div className="card w-full max-w-md bg-base-100 shadow-xl">
         <div className="card-body items-center text-center">
 
-          {/* Icon */}
           <AlertTriangle className="w-14 h-14 text-warning" />
 
-          {/* Title */}
           <h2 className="card-title text-2xl mt-2">
             Too Many Requests
           </h2>
 
-          {/* Message */}
           <p className="text-base-content/70">
             You’re hitting the server too fast.
             Please wait a few seconds and try again.
           </p>
 
-          {/* Actions */}
           <div className="card-actions mt-4 gap-2">
             <button
               className="btn btn-primary gap-2"
@@ -38,8 +34,7 @@ const RateLimitedUI = () => {
               Go Back
             </button>
           </div>
-
-          {/* Footer */}
+          
           <p className="text-xs text-base-content/50 mt-4">
             Error 429 · Rate limit exceeded
           </p>
