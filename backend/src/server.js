@@ -20,7 +20,7 @@ app.use(cors({
 }))
 app.use(rateLimiter);
 
-app.use('/notes/api', router)
+app.use('/api/notes', router)
 
 connectDb().then(() => {
    app.listen(PORT, () => {
