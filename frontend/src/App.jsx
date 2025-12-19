@@ -1,21 +1,21 @@
-import {Route, Routes} from 'react-router'
+import { Route, Routes } from 'react-router';
 
-import HomePage from "./pages/HomePage"
-import CreatePage from './pages/CreatePage'
-import ContentPage from './pages/ContentPage'
-import NoteDetailPage from './pages/NoteDetailPage'
-import toast from 'react-hot-toast'
+import HomePage from "./pages/HomePage";
+import CreatePage from './pages/CreatePage';
+import NoteDetailPage from './pages/NoteDetailPage';
 
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<HomePage />}/>
-        <Route path='/create' element={<CreatePage />}/>
-        <Route path='/note/:id' element={<NoteDetailPage />}/>
-      </Routes>
-    </div>
-  )
-}
+        <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+           <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/create' element={<CreatePage />} />
+          <Route path='/note/:id' element={<NoteDetailPage />} />
+        </Routes> 
+            </div>
+        
+     
+  );
+};
 
-export default App
+export default App;
