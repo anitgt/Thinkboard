@@ -112,7 +112,7 @@ Screenshots:
 
 
 📌 Future Improvements
-<img width="1919" height="917" alt="Screenshot 2025-12-20 215404" src="https://github.com/user-attachments/assets/cc1d08d4-6e80-461f-a1d6-9a28da429a7c" />
+<img width="1919" height="917" alt="Screenshot 2025-12-20 215404" src="https://github.com/user-attachments/assets/e575b15e-1147-40e2-922f-99e4eac070d5" />
 
 User authentication (JWT)
 
