@@ -26,7 +26,7 @@ It is built with a modern React frontend and a secure Express + MongoDB backend,
 - React (Vite)
 - Axios
 - React Router
-- Tailwind CSS (if used)
+- Tailwind CSS
 
 ### Backend
 - Node.js
@@ -108,11 +108,8 @@ Production API base URL uses relative /api path
 Live URL:
 👉 https://thinkboard-1z2n.onrender.com/
 
-Screenshots:
-
 
 📌 Future Improvements
-<img width="1919" height="917" alt="Screenshot 2025-12-20 215404" src="https://github.com/user-attachments/assets/e575b15e-1147-40e2-922f-99e4eac070d5" />
 
 User authentication (JWT)
 
